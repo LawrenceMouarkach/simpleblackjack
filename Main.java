@@ -63,8 +63,10 @@ public class Main {
             System.out.println("***** BLACKJACK!!! PLAYER WINS!! ******");
             return;
         }
-
+       
         if(dealerTotal == 21) {
+            System.out.println(format("***** DEALERS HAND IS REVEALED: (%s %s, %s %s) TOTAL: %s *****",
+                    dealersFirst.getCardValue(), dealersFirst.getCardSuit(), dealersSecond.getCardValue(), dealersSecond.getCardSuit(), dealerTotal));
             System.out.println("***** DEALER GOT BLACKJACK!!! PLAYER LOSES :( UNLUCKY!! ******");
             return;
         }
