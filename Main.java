@@ -53,6 +53,8 @@ public class Main {
         System.out.println(format("***** DEALER IS DELT: (%s %s, * *) *****", dealersFirst.getCardValue(), dealersFirst.getCardSuit()));
         System.out.println(format("***** PLAYER IS DELT: (%s %s, %s %s) TOTAL: %s *****", playersFirst.getCardValue(), playersFirst.getCardSuit(),
                 playersSecond.getCardValue(), playersSecond.getCardSuit(), playerTotal));
+        
+        System.out.println("***** HIT (H/h) or STICK (S/s) ? *****");
 
         if(playerTotal == 21 && dealerTotal == 21) {
             System.out.println("***** STOP ME SMEE! DONT STOP ME SMEE! ITS A DRAW SMEE!! ******");
