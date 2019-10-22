@@ -65,12 +65,11 @@ public class Main {
         }
        
         if(dealerTotal == 21) {
-            System.out.println(format("***** DEALERS HAND IS REVEALED: (%s %s, %s %s) TOTAL: %s *****",
+            System.out.println(format("***** DEALER GOT BLACKJACK (%s %s, %s %s) TOTAL: %s !!! PLAYER LOSES :( UNLUCKY!! *****",
                     dealersFirst.getCardValue(), dealersFirst.getCardSuit(), dealersSecond.getCardValue(), dealersSecond.getCardSuit(), dealerTotal));
-            System.out.println("***** DEALER GOT BLACKJACK!!! PLAYER LOSES :( UNLUCKY!! ******");
             return;
         }
-
+        
         final Scanner scanner = new Scanner(System.in);
         while (playerTotal <= 21) {
             final String playerOption = scanner.next();
